@@ -19,7 +19,7 @@ a:hover
 }
 
 
-body {	
+body {
 	height: 100%;
 	margin:0;
     padding:0;   
@@ -73,8 +73,8 @@ header img {
 }
 
 .login button {				
-	height: 7rem;
-	width: 7rem;	
+	height: 4.3rem;
+	width: 4.3rem;	
 	padding: 0;
 	margin: 0;
 	background: linear-gradient(to right, #141e30, #243b55);
@@ -83,8 +83,8 @@ header img {
 }
 
 .login img {
-	width: 60%;
-	height: 55%;		
+	width: 50%;
+	height: 45%;		
 }
 
 .login span {	
@@ -203,11 +203,10 @@ header img {
 /* FOOTER */
 
 footer {
-	position: absolute;
+	position: relative;
    	width: 100%;   	
    	height: 10em;
-   	bottom: 0;
-}
+   }
 
 footer img {
 	height: 2.4rem;
@@ -261,6 +260,58 @@ footer img {
 .link6:hover .description6 {
 	opacity: .9;
 	transform: translate(7%, 90%);	
+}
+
+/*----------------------------------- SECCIONES -----------------------------------*/
+
+/* CONOCENOS */
+
+.conocenos h3 {
+	font-size: 1.7rem;	
+	font-family: 'Roboto Mono', monospace;
+	text-decoration: underline;
+	font-weight: 700;
+	text-align: justify;
+	padding-bottom: 10px;
+}
+
+.conocenos p, ul li {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;	
+	font-size: 0.9rem;
+	text-align: left;
+	line-height: 1.3;
+}
+
+.conocenos-grid {
+	margin: 10px 0px 10px 0px;
+	padding: 1rem;
+	border: 1px solid #555;
+	border-radius: 7px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 200px 1fr;	
+}
+
+.conocenos-img img {
+	border: 1px solid #555;
+	border-radius: 10px;	
+	max-width: 100%;
+	height: auto;
+}
+
+.conocenos-body {
+	padding: 1rem;
+}
+
+.conocenos-body ul {
+	margin: 5px 5px 5px 0px;
+	padding: 5px 5px 5px 0px;
+}
+
+.conocenos-body span {	
+	letter-spacing: 4px;
+	padding-left: 8rem;
 }
 
 /* RESPONSIVE */
@@ -322,6 +373,10 @@ footer img {
 		visibility: hidden;
 	}
 
+	.conocenos-grid {
+	display: block;	
+	padding: 0;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px)
@@ -342,6 +397,11 @@ footer img {
     .carrouselContainer {    
    	 padding-right: 0px;
     }
+	
+	.conocenos-grid {
+	grid-template-columns: 1fr;
+	}
+
 }
 
 @media (min-width: 576px) and (max-width: 870px)
@@ -364,12 +424,8 @@ footer img {
 		padding-left: 100px;
     }
 
-}
-
-@media (max-height: 844px)
-{
-	footer {
-		position: relative;		
-
+    .conocenos-grid {
+	display: block;	
+	padding: 0;
 	}
 }

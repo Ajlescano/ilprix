@@ -9,7 +9,8 @@
 	<meta name="description" content="DISTRIBUIDORA, ORGANICO, VEGANO, COCA, CELIACO, SAAVEDRA, COLEGIALES, ALMAGRO, PALERMO, BELGRANO, NUÑEZ, COGHLAN">
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<!-- BOOTSTRAP -->
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,200;1,300;1,600;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;500;700&display=swap" rel="stylesheet">
 	<!-- ELEMENTOS CSS -->
 	<link rel="stylesheet" href="css/main.css">	
@@ -22,7 +23,7 @@
 		<img src="imagenes/header.jpg" alt="header">	
 	</header>
 	<!-- CONTENEDOR -->
-	<div class="container">
+	<div class="container-md">
 			<!-- BOTON LOGO -->	
 			<div class="logo">
 				<img src="imagenes/logo.png" alt="logo">
@@ -84,7 +85,7 @@
 		</div>		
 		<div class="row indexContainer">
 			<!-- MENU -->
-			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<div id="menuVertical">
 					<ul id="menu-categorias" class="nav nav-pills nav-stacked">
 						<li><h3>Categorias</h3></li>									
@@ -99,71 +100,56 @@
 						<li><a class="nav-link" href="novedades.html"><span>Novedades</span></a></li>			
 					</ul>								
 				</div>
-			</div>
-			<!-- CARROUSEL -->
-			<div class="col-sm-10 col-xs-12 col-md-10 col-lg-10 carrouselContainer">										
-				<h3 class="text-center mt-3 mb-0 font-weight-bold bg-dark text-white anchoTitulo">Encontra lo que mas te gusta siempre</h3>
-				<div id="carousel-index" class="carousel slide carousel-fade" data-ride="carousel">
-  					<div class="carousel-inner index">
-   						<div class="carousel-item active">
-     						<img class="d-block" src="imagenes/carrousel-index/coca.jpg" alt="coca">
-  							<div class="carousel-caption d-none d-md-block">
-    							<h5 class="badge badge-pill badge-warning">Coca~Cola x 2.25l.</h5> 					
-  							</div>
-						</div>
-    					<div class="carousel-item">
-      						<img class="d-block" src="imagenes/carrousel-index/doritos.jpg" alt="doritos">
-      						<div class="carousel-caption d-none d-md-block">
-    							<h5 class="badge badge-pill badge-warning">Doritos x 140g.</h5>    					
-  							</div>
-    					</div>
-    					<div class="carousel-item">
-      						<img class="d-block" src="imagenes/carrousel-index/fernet.png" alt="fernet">
-      						<div class="carousel-caption d-none d-md-block">
-    							<h5 class="badge badge-pill badge-warning">Fernet 1882</h5>    					
-  							</div>
-    					</div>
-    					<div class="carousel-item">
-      						<img class="d-block" src="imagenes/carrousel-index/legume.png" alt="legume">
-      						<div class="carousel-caption d-none d-md-block">
-    							<h5 class="badge badge-pill badge-warning">Fideos organicos x 284g.</h5>    					
-  							</div>
-    					</div>
-    					<div class="carousel-item">
-      						<img class="d-block" src="imagenes/carrousel-index/waka.jpg" alt="waka">
-      						<div class="carousel-caption d-none d-md-block">
-    							<h5 class="badge badge-pill badge-warning">Fideos apto celiaco x 250g.</h5>    					
-  							</div>
-    					</div>
-    					<div class="carousel-item">
-      						<img class="d-block" src="imagenes/carrousel-index/tofu.png" alt="tofu">
-      						<div class="carousel-caption d-none d-md-block">
-    							<h5 class="badge badge-pill badge-warning">Queso vegano~Tofu</h5>    					
-  							</div>
-    					</div>
-    					<div class="carousel-item">
-      						<img class="d-block" src="imagenes/carrousel-index/vino2.png" alt="vino">
-      						<div class="carousel-caption d-none d-md-block">
-    							<h5 class="badge badge-pill badge-warning">Famiglia Bianchi Malbec</h5>    					
-  							</div>
-    					</div>
-    					<div class="carousel-item">
-      						<img class="d-block" src="imagenes/carrousel-index/papelH.png" alt="papel-higiénico">
-      						<div class="carousel-caption d-none d-md-block">
-    							<h5 class="badge badge-pill badge-warning">Papel Higiénico Elite</h5>    					
-  							</div>
-    					</div>
-  					</div>
- 					<a class="carousel-control-prev" href="#carousel-index" role="button" data-slide="prev">
-    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    					<span class="sr-only">Previous</span>
-  					</a>
- 					<a class="carousel-control-next" href="#carousel-index" role="button" data-slide="next">
-    					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-   		 				<span class="sr-only">Next</span>
-  					</a>
-  				</div>
-			
+			</div>			
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 conocenos">
+				<!-- CONOCENOS -->				
+				<div class="conocenos-grid">
+					<div class="conocenos-img">
+						<img src="imagenes/almacen.jpg" alt="almacen">
+					</div>
+					<div class="conocenos-body">
+						<h3>Nuestros comienzos</h3>
+						<p>Iniciando en 1989 como un almacen de barrio, <b>il Prix</b>, ahora gran distribuidora de la ciudad porteña, fue creciendo sin perder su esencia, anteponiendo siempre el beneficio de sus clientes.</p>
+						<p>Desde la última década el mercado del retail se ha vuelto cada vez más dinámico. Un mercado compuesto por clientes cada vez más racionales. Clientes que comparan precios, calidad y servicios. En este tipo de mercado, invadido en un gran porcentaje por la informalidad que ha crecido en los últimos tiempos, <b>il Prix</b> ha logrado convertirse en una de las mayores distribuidoras dentro de Capital Federal.</p>
+					</div>
+				</div>				
+				<div class="conocenos-grid">
+					<div class="conocenos-img">
+						<img src="imagenes/mision.jpg" alt="mision">
+					</div>
+					<div class="conocenos-body">
+						<h3>Nuestra Misión</h3>
+						<ul>
+							<li>Ofrecer a los consumidores soluciones a sus necesidades de alimentación desde un compromiso único en el mercado con la calidad y el precio.</li>
+							<li>Satisfacer a nuestros empleados, proveedores y accionistas.</li>						
+							<li><span>Eficacia</span>
+								<ul>
+									<li>Somos rigurosos y profesionales. Ofrecemos a nuestros clientes productos y servicios de la más alta calidad y al mejor precio.</li>
+								</ul>
+							</li>
+							<li><span>Iniciativa</span>
+								<ul>
+									<li>Estamos atentos a los cambios que se producen en los mercados en los que desarrollamos nuestra actividad y nos anticipamos con soluciones creativas e innovadoras.</li>
+								</ul>
+							</li>
+							<li><span>Respeto</span>
+								<ul>
+									<li>Respetamos nuestros compromisos. Generamos un ambiente de confianza y aceptamos la diversidad y las diferencias.</li>
+								</ul>
+							</li>
+							<li><span>Equipo</span>
+								<ul>
+									<li>Trabajamos en equipo, aportando lo mejor de cada uno para lograr los máximos resultados</li>
+								</ul>
+							</li>
+							<li><span>Cliente</span>
+								<ul>
+									<li>Procuramos conseguir la satisfacción del cliente. Es nuestro principal objetivo.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>					
 			</div>
 		</div>
 	</div>
