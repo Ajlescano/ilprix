@@ -7,6 +7,11 @@
   --blanco:#FFFF;
   --bordo:#E4324C;
   --bordefino:#bcbcbc;
+  --negro:#000000;
+  --violeta:#4f3466ff;
+  --gris-oscuro:#444;
+  --mostaza:#F4BD16;
+  --pastel:#F7CAC9;
 }
 
 * {
@@ -117,7 +122,7 @@ header img {
 	font-family: 'MuseoModerno', cursive;	
 	display: table-caption;
 	font-size: 1.1rem;
-	color: black;
+	color: var(--negro);
 	opacity: 0.6;	
 }
 
@@ -139,6 +144,7 @@ header img {
 
 #menu-categorias li {  
     width: 100px;
+    text-align: center;
 }
 
 #menu-categorias h3 {
@@ -146,17 +152,17 @@ header img {
 	padding: 10px;
     background-color: var(--bordo);
     font-family: 'MuseoModerno', cursive;
-    color: #FFFF;
+    color: var(--blanco);
 }
 
 #menu-categorias li > a {    
     padding: 10px;
-    color: #444;
+    color: var(--gris-oscuro);
 }
 
 #menu-categorias > li > a:hover {
-    color: #fff;
-    background: #F4BD16;  	
+    color: var(--blanco);
+    background: var(--mostaza);  	
 	transition: all 1ms ease-in-out;
 }
 #menu-categorias li > a > span
@@ -170,10 +176,6 @@ header img {
 	text-align: -webkit-center;
 	align-self: center;
 	padding-right: 170px;
-}
-
-.indexContainer {
-	text-align: center;
 }
 
 .carousel-item
@@ -223,7 +225,7 @@ footer img {
 
 .footer-links span {
 	font-size: 1.34rem;
-	color: #4f3466ff;	
+	color: var(--violeta);	
 	letter-spacing: -1px;
 	line-height: 1.2;
 	opacity: 0;
@@ -312,6 +314,54 @@ footer img {
 .conocenos-body span {	
 	letter-spacing: 4px;
 	padding-left: 8rem;
+}
+
+/* CONTACTO */
+
+.contacto h3 {
+	margin-top: 7px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;	
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1.3;
+	text-decoration: underline;
+	text-decoration-style: dashed;	
+	letter-spacing: 25px;	
+}
+
+.contacto p {
+	font-family: 'Roboto Mono', monospace;
+	padding: 0.7rem;
+	margin-bottom: 0.4rem;
+	margin-top: 0.2rem;
+	font-weight: 300;	
+	text-align: justify;	
+	background-color: var(--pastel);
+	border-radius: 7px;
+	text-align: center;
+	color: var(--gris-oscuro);
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.contacto label,option {
+	font-family: 'Roboto Mono', monospace;
+	padding: 0.5rem;
+	font-weight: 300;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+}
+
+.contacto input::placeholder,.contacto textarea::placeholder {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.8rem;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+.form-group.row {
+	margin-left: 0px !important;
 }
 
 /* RESPONSIVE */
