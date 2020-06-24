@@ -510,6 +510,39 @@ footer img {
 	font-size: 0.9rem;
 }
 
+/* F.A.Q. */
+
+.faq h2 {
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	margin:auto;
+	font-weight: 500;	
+	font-size: 4rem;	
+	line-height: 1.3;		
+	letter-spacing: -4px;
+	color: var(--grisOscuro);
+	text-decoration: underline;
+}
+
+.faq-grid {
+	margin: auto;
+	display: grid;
+	grid-template-rows: 15rem 15rem;
+	grid-template-columns: 1fr 1fr;	
+	grid-gap: 1rem;
+}
+
+.boton{
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	border-radius: 25px 0px 25px 1px;	
+	background-color:  #92A8D1;
+}
+
+.boton li {	
+	padding-left: 2.6rem;
+	color: var(--blanco);
+}
 
 /* RESPONSIVE */
 
