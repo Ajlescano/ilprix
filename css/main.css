@@ -2,14 +2,15 @@
 
 :root {
   --gris:rgba(86,61,124,.15);
-  --verde-cypher:#53b4a2;
+  --verdeCypher:#53b4a2;
+  --verdeDolar: #85bb65;
   --gold:#F4B95F;
   --blanco:#FFFF;
   --bordo:#E4324C;
   --bordefino:#bcbcbc;
   --negro:#000000;
   --violeta:#4f3466ff;
-  --gris-oscuro:#444;
+  --grisOscuro:#444;
   --mostaza:#F4BD16;
   --pastel:#F7CAC9;
 }
@@ -18,9 +19,13 @@
 	text-decoration: none;
 }
 
-a:hover
-{
-    text-decoration: none;
+a {
+	color: inherit;
+} 
+
+a:hover {
+   text-decoration:none;
+   color: inherit;  
 }
 
 
@@ -56,7 +61,7 @@ header img {
 	font-size: 4.3rem;
 	font-weight: bold;	
 	letter-spacing: -8px;	
-	text-shadow: var(--verde-cypher) 4px 2px;
+	text-shadow: var(--verdeCypher) 4px 2px;
 	text-transform: uppercase;	
 	white-space: nowrap;
 	align-self: center;	
@@ -153,11 +158,12 @@ header img {
     background-color: var(--bordo);
     font-family: 'MuseoModerno', cursive;
     color: var(--blanco);
+    width: inherit;
 }
 
 #menu-categorias li > a {    
     padding: 10px;
-    color: var(--gris-oscuro);
+    color: var(--grisOscuro);
 }
 
 #menu-categorias > li > a:hover {
@@ -174,8 +180,7 @@ header img {
 
 .carrouselContainer {
 	text-align: -webkit-center;
-	align-self: center;
-	padding-right: 170px;
+	align-self: center;	
 }
 
 .carousel-item
@@ -189,17 +194,25 @@ header img {
 	max-height: 30rem;
 }
 
-#carousel-index {
-	width: 27rem;
-}
-
 .anchoTitulo {
 	font-family: 'MuseoModerno', cursive;
 	width: 27rem;
 }
 
+.anchoTitulo2 {	
+	width: 33rem;
+}
+
 .carousel-caption h5 {
 	font-family: 'MuseoModerno', cursive;
+}
+
+#carousel-index {
+	width: 27rem;
+}
+
+#carousel-zonas {
+	width: 33rem;	
 }
 
 /* FOOTER */
@@ -340,7 +353,7 @@ footer img {
 	background-color: var(--pastel);
 	border-radius: 7px;
 	text-align: center;
-	color: var(--gris-oscuro);
+	color: var(--grisOscuro);
 	text-transform: uppercase;
 	font-size: 0.8rem;
 }
@@ -363,6 +376,140 @@ footer img {
 .form-group.row {
 	margin-left: 0px !important;
 }
+
+/* MEDIOS DE PAGO */
+
+.pagos {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.pagos h3 {
+	text-align: center;
+	margin-top: 7px;
+	font-weight: 500;	
+	font-size: 2rem;	
+	line-height: 1.3;		
+	letter-spacing: -4px;
+}
+
+.tarjetaGrid {
+	margin: auto;
+	display: grid;
+	grid-gap: .7rem;
+	max-width: 20rem;
+	grid-template-rows: 2rem;	
+	padding: 20px;
+	border: .588rem solid var(--blanco);
+	border-radius: 2rem;
+	margin-top: 1rem;
+}
+
+.tarjetaGrid img {	
+	width: 5rem;
+}
+
+#tarjetaTitle {
+	grid-column: span 3;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: var(--blanco);
+}
+
+.tarjetaFlex {
+	display: flex;
+	flex-direction: column;
+	margin: auto;	
+	max-width: 20rem;		
+	padding: 20px;
+	border: .588rem solid var(--blanco);
+	border-radius: 2rem;
+	margin-top: 1rem;
+}
+
+#efectivo {		
+	display: flex;
+	align-items: center;	
+	font-size: 1.3rem;
+	color: var(--verdeDolar);
+	padding: 0.3rem;
+}
+
+#cheques {	
+	display: flex;
+	align-items: center;	
+	font-size: 1.3rem;
+	color: var(--verdeDolar);
+	padding: 0.3rem;
+}
+
+#transfer {		
+	display: flex;
+	align-items: center;
+	font-size: 1.3rem;
+	color: var(--verdeDolar);
+	padding: 0.3rem;
+}
+
+.tarjetaFlex img {
+	width: 2rem;
+}
+
+/* METODOS DE ENTREGA */
+
+.entrega h3 {
+	text-align: center;
+	margin-top: 7px;
+	font-weight: 500;	
+	font-size: 2rem;	
+	line-height: 1.3;		
+	letter-spacing: -4px;
+	color: var(--grisOscuro);
+	text-decoration: underline;
+}
+
+.tarjetaEntrega {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	box-shadow: 35px 24px 64px -21px rgba(128,128,120,1);	
+	margin: 1rem;	
+}
+
+.tarjetaEntrega a {
+	color: #007bff;
+	text-decoration: underline;
+}
+
+.subtituloEntrega {
+	padding: 0.8rem;
+	background-color: #5eb43e;	
+	width: 100%;
+	text-align: center;	
+}
+
+.subtituloEntrega h5 {
+	color: var(--blanco);
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.bodyEntrega {
+	padding: 1rem;
+	background-color: var(--blanco);	
+}
+
+.bodyEntrega span {
+	color: var(--grisOscuro);
+	font-weight: 400;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.9rem;
+}
+
 
 /* RESPONSIVE */
 
@@ -410,13 +557,17 @@ footer img {
 		width: 23rem;		
 	}
 
+	#carousel-zonas {
+		width: 23rem;
+	}
+
     .anchoTitulo {
     	width: 23em;
     }
 
-    .carrouselContainer {  
-    	padding-right: 0px;    	
-	}
+     .anchoTitulo2 {
+    	width: 23em;
+    }
 
 	.logo span {
 		display: none;
@@ -427,31 +578,6 @@ footer img {
 	display: block;	
 	padding: 0;
 	}
-}
-
-@media (min-width: 768px) and (max-width: 991px)
-{
-	.container {
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-
-    .logo h1 {
-		display: flex;
-		visibility: visible;
-		font-size: 3.4em;
-		font-weight: normal;
-		letter-spacing: -4px;	
-    }
-
-    .carrouselContainer {    
-   	 padding-right: 0px;
-    }
-	
-	.conocenos-grid {
-	grid-template-columns: 1fr;
-	}
-
 }
 
 @media (min-width: 576px) and (max-width: 870px)
@@ -469,13 +595,30 @@ footer img {
 		letter-spacing: -4px;
 		white-space: nowrap;
 	}
-
-	.carrouselContainer {    
-		padding-left: 100px;
-    }
-
+		
     .conocenos-grid {
 	display: block;	
 	padding: 0;
 	}
+}
+
+@media (min-width: 871px) and (max-width: 991px)
+{
+	.container {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+    .logo h1 {
+		display: flex;
+		visibility: visible;
+		font-size: 3.4em;
+		font-weight: normal;
+		letter-spacing: -4px;	
+    }
+
+	.conocenos-grid {
+	grid-template-columns: 1fr;
+	}
+
 }
