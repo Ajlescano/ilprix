@@ -133,22 +133,18 @@ header img {
 
 /* MENU */
 
-#menuVertical {
-	width: 6.4rem;
-	margin: 20px 50px;
+#menuVertical {	
+	width: 9rem;
 }
 
-#menu-categorias {    
-    border-left: 1px solid var(--bordefino); 
-    border-right: 1px solid var(--bordefino);
-    border-top: 1px solid var(--bordefino); 
-    border-bottom: 1px solid var(--bordefino);
+#menu-categorias {
+	border: 1px solid var(--bordefino);   
     border-radius: 5px;
     overflow: hidden;
 }
 
 #menu-categorias li {  
-    width: 100px;
+    width: 100%;
     text-align: center;
 }
 
@@ -169,10 +165,9 @@ header img {
 #menu-categorias > li > a:hover {
     color: var(--blanco);
     background: var(--mostaza);  	
-	transition: all 1ms ease-in-out;
+	transition: all 450ms ease-in-out;
 }
-#menu-categorias li > a > span
-{
+#menu-categorias li > a > span {
 	font-family: 'MuseoModerno', cursive;
 }
 
@@ -480,6 +475,7 @@ footer img {
 .tarjetaEntrega:hover {
 	transform: translateY(-15px) scale(1.02);
  	box-shadow: 0px 24px 36px #4C5656;
+ 	transition: all 350ms ease-in-out;
  }
 
 .tarjetaEntrega a {
@@ -541,11 +537,12 @@ footer img {
 	text-align: center;
 	border-radius: 25px 0px 25px 1px;	
 	background-color:  #92A8D1;
+	height: auto;
 }
 
 .boton li {	
 	padding-left: 2.6rem;
-	color: var(--blanco);
+	color: var(--blanco);	
 }
 
 /* UNITE */
@@ -716,6 +713,12 @@ footer img {
 		width: 11em;
 	}
 
+	#carousel-zonas {
+		width: 26em;
+	}
+ 	.anchoTitulo2 {
+    	width: 26em;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px)
