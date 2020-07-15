@@ -21,7 +21,7 @@
 
 a {
 	color: inherit;
-} 
+}
 
 a:hover {
    text-decoration:none;
@@ -196,6 +196,7 @@ header img {
 
 .anchoTitulo2 {	
 	width: 33rem;
+	margin-top: 5rem;
 }
 
 .carousel-caption h5 {
@@ -214,8 +215,9 @@ header img {
 
 footer {
 	margin-top: 6.5rem;
-   	width: 100%;   	
-   	height: 10em;	
+   	width: 100%;
+   	position: relative;
+    bottom: 0px;
    }
 
 footer img {
@@ -603,9 +605,74 @@ footer img {
 	width: 100%;	
 }
 
-/* ------------------------------------------- NOVEDADES ------------------------------------------- */
+/* ------------------------------------------- REGISTRO ------------------------------------------- */
 
-.novedades h2 {
+.registro {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'MuseoModerno', cursive;
+  background: linear-gradient(to bottom, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.registro .registroTitulo {
+	margin-top: 1rem;
+	margin-bottom: 1rem;	
+	font-size: 2rem;
+	color: #FF0080;	
+	margin-bottom: 2rem;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.registro .bodyRegistro {
+  padding: 2rem;
+  width: 100%;
+}
+
+.bodyFormulario {
+  width: 100%;
+}
+
+.bodyFormulario .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+}
+
+.btn-google {
+  color: var(--blanco);
+  background-color: #ea4335;
+  border-radius: 12rem;
+  width: 50%;
+  margin:auto;
+}
+
+.btn-facebook {
+  color: var(--blanco);
+  background-color: #3b5998;
+  border-radius: 12rem;
+  width: 50%;
+  margin:auto;
+}
+
+/* ------------------------------------------- TABLAS DE PRODUCTOS ------------------------------------------- */
+
+.tablaCategoria h2 {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	font-family: 'MuseoModerno', cursive;
@@ -613,7 +680,8 @@ footer img {
 	color: var(--bordo);
 	border-bottom: 3px solid var(--bordo);
 }
-.novedades {
+
+.tablaCategoria {
 	border-spacing: 0px;
 	font-family: 'Roboto Mono', monospace;
     font-weight: 400;   
@@ -622,33 +690,34 @@ footer img {
     font-size: 0.9rem;
 }
 
-.novedades table {
+.tablaCategoria table {
 	width: 100%;
 	border-collapse: collapse;
+	margin: 1.7rem 0rem 1.7rem 0rem;
 }
 
-.novedades th {
+.tablaCategoria th {
 	background: black;
 	text-align: center;
 }
 
-.novedades th, td {
+.tablaCategoria th, td {
 	border: 1px solid #ccc;
 }
 
-.novedades td ul, .novedades td ol {
+.tablaCategoria td ul, .tablaCategoria td ol {
 	padding-left: 10px;
 }
 
-.novedades thead {
+.tablaCategoria thead {
 	color: #ffff;
 }
 
-.novedades img {
-	width: 180px;
+.tablaCategoria img {
+	width: 180px;	
 }
 
-.novedades img:hover {	
+.tablaCategoria img:hover {	
 	transform: scale(1.8);	
 	transition: all 700ms ease;	
 	border-radius: 10px;
@@ -658,7 +727,17 @@ footer img {
 }
 
 .vencimiento {
+	text-align: center;	
+	padding: 0 !important;	
+}
+
+.fondoBlanco {
+	background-color: var(--blanco);
 	text-align: center;
+}
+
+.tablaCategoria hr {
+	display: none;
 }
 
 /* ------------------------------------------- RESPONSIVE ------------------------------------------- */
@@ -750,32 +829,46 @@ footer img {
 		margin-top: 17px;
 	}
 	
-	.novedades table, thead, tbody, th, td, tr { 
+	.tablaCategoria table, thead, tbody, th, td, tr { 
 		display: block; 
 	}
 	
-	.novedades thead tr { 
+	.tablaCategoria thead tr { 
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
 
-	.novedades td {		
+	.tablaCategoria td {		
 		border: none;
 		border-bottom: 1px solid #eee; 
 		position: relative;
 		padding-left: auto; 
 	}
 
-	.novedades tbody td {
+	.tablaCategoria tbody td {
 		margin: 1em 0em 1em 0em;
 		padding-left: 20%;
 	}
 
-	.novedades tfoot tr {
+	.tablaCategoria tfoot tr {
 		padding-left: 25%;
 	}
 
+	.tablaCategoriatd.fondoBlanco {
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.tablaCategoria hr {
+		display: block;	    
+	    height: 30px;
+	    margin-top: -31px;
+	    border-style: solid;
+	    border-color: black;
+	    border-width: 0 0 1px 0;
+	    border-radius: 20px;
+	}
 }
 
 @media (min-width: 576px) and (max-width: 767px)
@@ -840,5 +933,5 @@ footer img {
 
 	.icon {
 		align-self: flex-start;
-	}	
+	}
 }
