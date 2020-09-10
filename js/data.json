@@ -1,0 +1,68 @@
+"almacen" : [{
+  "producto": "Arroz Blanco",
+  "marca": "Dos Hermanos",  
+  "tipo": "Largo Fino 5 ceros",
+  "peso": "1kg",
+  "valorenergetico" : 179,
+  "precio": 57,
+},{
+  "producto": "Harina",
+  "marca": "Pureza",  
+  "tipo": "0000 ULTRA REFINADA",
+  "peso": "1kg",
+  "valorenergetico" : 169,
+  "precio": 68,
+},{
+  "producto": "Picadillo",
+  "marca": "Swift",  
+  "tipo": "De carne",
+  "peso": "90g",
+  "valorenergetico" : 22,
+  "precio": 22,
+}];
+
+"Snacks" : [{
+  "producto": "Papas fritas",
+  "marca": "Lay's",  
+  "tipo": "Clásicas",
+  "peso": "23g",
+  "valorenergetico" : 130,
+  "precio": 34,
+},{
+  "producto": "Snack de Queso",
+  "marca": "3d's",  
+  "tipo": "Queso",
+  "peso": "105g",
+  "valorenergetico" : 127,
+  "precio": 124,
+},{
+  "producto": "Papas de tubo",
+  "marca": "Pringles",  
+  "tipo": "Clásicas",
+  "peso": "124g",
+  "valorenergetico" : 130,
+  "precio": 180,
+}];
+
+"vegano" : [{
+  "producto": "Fideos de Arroz",
+  "marca": "Fu Sheng",  
+  "tipo": "Sin Tacc",
+  "peso": "200g",
+  "valorenergetico" : 364 ,
+  "precio": 92,
+},{
+  "producto": "Harina",
+  "marca": "Ades",  
+  "fuente": "Calcio, 8 Vitaminas y Zinc",
+  "peso": "1L",
+  "valorenergetico" : 80,
+  "precio": 80,
+},{
+  "producto": "Faina",
+  "marca": "Fainalind",  
+  "descripcion": "Harina de Garbanzo",
+  "peso": "200g",
+  "valorenergetico" : 212,
+  "precio": 92,
+}];

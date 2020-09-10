@@ -9,6 +9,8 @@
 	<meta name="description" content="DISTRIBUIDORA, ORGANICO, VEGANO, COCA, CELIACO, SAAVEDRA, COLEGIALES, ALMAGRO, PALERMO, BELGRANO, NUÑEZ, COGHLAN">
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- ANIMATE -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,200;1,300;1,600;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;500;700&display=swap" rel="stylesheet">
@@ -20,23 +22,22 @@
 <body>
 	<!-- HEADER -->
 	<header>
-		<img src="imagenes/header.jpg" alt="header">	
+		<img src="imagenes/header.jpg" alt="header">		
+		<!-- BOTON LOGO -->
+		<div class="logo">
+			<a href="index.html">
+				<img src="imagenes/logo.png" alt="logo">
+			</a>		
+		</div>
+		<!-- BOTON LOGIN -->
+		<div class="login">	
+			<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">
+				<img src="imagenes/user.png" alt="login"><span>Login</span>
+			</button>
+		</div>		
 	</header>
 	<!-- CONTENEDOR -->
-	<div class="container">
-			<!-- BOTON LOGO -->	
-			<a href="index.html">	
-				<div class="logo">
-					<img src="imagenes/logo.png" alt="logo">
-					<h1><span>Distribuidora</span> Il Prix</h1>
-					<!-- BOTON LOGIN -->
-					<div class="login">	
-						<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">
-							<img src="imagenes/user.png" alt="login"><span>Login</span>
-						</button>
-					</div>	
-				</div>
-			</a>
+	<div class="container">		
 		<!-- MODAL LOGIN -->
 		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
  			<div class="modal-dialog">
@@ -105,7 +106,7 @@
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-10 contacto">
 				<h3>Contacto</h3>
 				<p>Deje sus datos y nos comunicaremos con usted a la brevedad</p>
-				<form>
+				<form id="contenedorDefinitivo">
 					<div class="form-group row">
 						<label for="nombre" class="col-form-label col-sm-2">Nombre</label>
 						<div class="col-sm-10">
@@ -125,11 +126,11 @@
 						</div>						
 					</div>
 					<div class="form-inline">						
-						<input type="checkbox" id="recordatorio" value="si"><label for="recordatorio">¿Desea recibir emails con nuestras ofertas?</label>
+						<input type="checkbox" id="newsletter" value="Usted acepta recibir nuestras ofertas semanales"><label for="newsletter">¿Desea recibir emails con nuestras ofertas?</label>
 					</div>
 					<div class="form-inline">					    
 				    	<label class="mr-sm-2" for="zonas">Seleccione la zona donde se encuentre su local/negocio:</label>
-				    	<select class="custom-select mr-sm-2" id="zonas">
+				    	<select id="zonas" class="custom-select mr-sm-2">
 				    		<option selected disabled>Zonas</option>	
 							<option value="Saavedra">Saavedra</option>
 							<option value="Belgrano">Belgrano</option>
@@ -148,28 +149,37 @@
 					 </div>
 					 <button type="reset" class="btn btn-outline-secondary">Limpiar Formulario</button> 
 					<button type="submit" class="btn btn-outline-success">Enviar Consulta</button>
-				</form>				
-			</div>				
+				</form>
+				<div id="hide" class="datosContainer">
+					<h4>Por favor confirme los datos de su consulta:</h4>
+					<ul id="confirmeDatos"></ul>				 	
+				</div>
+				<div id="tymsgFather">					
+					<button id="btnConfirm" type="submit" class="btn btn-outline-secondary">Confirmar</button>
+					<p class="animate__animated animate__fadeInUp" id="tymsg">¡muchas gracias por su consulta, nos comunicaremos con usted a la brevedad!</p>
+				</div>
+			</div>
 		</div>		
 	</div>
-		<!-- FOOTER -->
-		<footer>
-			<nav>
-				<section class="footer-links">			
-					<a class="link1" href="medios-pago.html"><img src="imagenes/pagos.png" alt="pagos"><span class="description1">Medios de pago</span></a>
-					<a class="link2" href="zonas.html"><img src="imagenes/zonas.png" alt="zonas"><span class="description2">Zonas</span></a>
-					<a class="link3" href="metodos-entrega.html"><img src="imagenes/entrega.png" alt="entrega"><span class="description3">Métodos de entrega</span></a>
-				</section>		
-				<section class="footer-links">
-					<a class="link4" href="faq.html"><img src="imagenes/faq.png" alt="faq"><span class="description4">Preguntas Frecuentes</span></a>
-					<a class="link5" href="unite.html"><img src="imagenes/work.png" alt="unite"><span class="description5">Aplicá aquí</span></a>
-					<a class="link6" href="https://www.instagram.com/ilprix777/"><img src="imagenes/insta.png" alt="follow"><span class="description6">Nuestro Instagram</span></a>
-				</section>
-			</nav>		
-		</footer>	
-<!-- SCRIPTS JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!-- FOOTER -->
+	<footer>
+		<nav>
+			<section class="footer-links">			
+				<a class="link1" href="medios-pago.html"><img src="imagenes/pagos.png" alt="pagos"><span class="description1">Medios de pago</span></a>
+				<a class="link2" href="zonas.html"><img src="imagenes/zonas.png" alt="zonas"><span class="description2">Zonas</span></a>
+				<a class="link3" href="metodos-entrega.html"><img src="imagenes/entrega.png" alt="entrega"><span class="description3">Métodos de entrega</span></a>
+			</section>		
+			<section class="footer-links">
+				<a class="link4" href="faq.html"><img src="imagenes/faq.png" alt="faq"><span class="description4">Preguntas Frecuentes</span></a>
+				<a class="link5" href="unite.html"><img src="imagenes/work.png" alt="unite"><span class="description5">Aplicá aquí</span></a>
+				<a class="link6" href="https://www.instagram.com/ilprix777/"><img src="imagenes/insta.png" alt="follow"><span class="description6">Nuestro Instagram</span></a>
+			</section>
+		</nav>		
+	</footer>	
+	<!-- SCRIPTS JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 	crossorigin="anonymous"></script>	
+	<script src="https://cdn.jsdelivr	.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="	sha384-Q6E9RHvbIyZFJoft+2mJbHaEWl	dlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymou	s"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity	="	sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="js/contacto.js"></script>
 </body>
 </html>

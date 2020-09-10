@@ -37,16 +37,16 @@ body {
 }
 
 /* ------------------------------------------- ENCABEZADO ------------------------------------------- */
-
 header {
-	height: 7rem;
-	width: 100%;	
+	position: relative;
+	height: 300px;
+	width: 100%;
+	display: block;
 }
 
 header img {
-	height: 100%;
 	width: 100%;
-	border-bottom: solid 2px green;
+	height: 100%;
 }
 
 .logo {
@@ -71,37 +71,6 @@ header img {
 	border-radius: 50px;
 	width: 100%;
 	height: 7rem;
-}
-
-/* ------------------------------------------- BOTON LOGIN ------------------------------------------- */
-
-.login {
-	display:flex;
-	flex-direction: column;	
-	justify-content: center;
-	align-items: center;
-}
-
-.login button {				
-	height: 4.3rem;
-	width: 4.3rem;	
-	padding: 0;
-	margin: 0;
-	background: linear-gradient(to right, #141e30, #243b55);
-	opacity: .7;
-	margin-left: 1rem;
-}
-
-.login img {
-	width: 50%;
-	height: 45%;		
-}
-
-.login span {	
-	font-size: 1rem;
-	color: var(--blanco);
-	font-weight: bold;	
-	text-transform: uppercase;
 }
 
 /* ------------------------------------------- LINKS (HEADER) ------------------------------------------- */
@@ -129,6 +98,39 @@ header img {
 	font-size: 1.1rem;
 	color: var(--negro);
 	opacity: 0.6;	
+}
+
+/* ------------------------------------------- BOTON LOGIN ------------------------------------------- */
+
+.login {
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.login button {	
+	height: 5.3rem;
+	width: 5.3rem;	
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to right, #141e30, #243b55);
+	opacity: .7;
+	margin-left: 1rem;
+}
+
+.login img {
+	width: 50%;
+	height: 45%;		
+}
+
+.login span {	
+	font-family: 'MuseoModerno', cursive;	
+	display: table-caption;
+	font-size: 1.1rem;
+	color: var(--blanco);
+	opacity: 0.6;		
 }
 
 /* ------------------------------------------- MENÚ ------------------------------------------- */
@@ -216,9 +218,9 @@ header img {
 footer {
 	margin-top: 6.5rem;
    	width: 100%;
-   	position: relative;
+   	posit¡+ion: relative;
     bottom: 0px;
-   }
+ }
 
 footer img {
 	height: 2.4rem;
@@ -382,6 +384,47 @@ footer img {
 	margin-left: 0px !important;
 }
 
+.datosContainer {
+	margin-top: 15px;
+	padding: 5px;	
+}
+
+#hide {
+	display: none;
+}
+
+#btnConfirm {
+	opacity: 0;
+}
+
+#tymsg {
+	margin-top: 15px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 120%;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+	display: none;
+}
+
+.datosContainer h4 {
+	padding: 5px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+#confirmeDatos li {
+	font-size: 90%;
+	padding: 5px;
+	font-family: 'Roboto Mono', monospace;	
+	/*color: #FFF748;
+	background-color: #3C1A5B;*/
+	color: #FFFFFF;
+	background-color: #8AAAE5;
+	border-radius: 16px;
+	margin: 10px;
+}
 /* ------------------------------------------- MEDIOS DE PAGO ------------------------------------------- */
 
 .pagos {
@@ -744,6 +787,10 @@ footer img {
 
 @media (max-width: 576px)
 {	
+	header {
+		height: 75px;
+	}
+
 	.logo {
 		left: 0;
 		width: 4.4em;
@@ -873,6 +920,10 @@ footer img {
 
 @media (min-width: 576px) and (max-width: 767px)
 {
+	header {
+		height: 150px;
+	}
+
 	.logo h1 {
 		display: flex;
 		visibility: visible;
@@ -919,6 +970,10 @@ footer img {
 
 @media (min-width: 768px) and (max-width: 991px)
 {
+	header {
+		height: 200px;
+	}
+
     .logo h1 {
 		display: flex;
 		visibility: visible;
@@ -933,5 +988,5 @@ footer img {
 
 	.icon {
 		align-self: flex-start;
-	}
+	}	
 }
