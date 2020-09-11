@@ -9,35 +9,41 @@ let btnConfirmar = document.getElementById('btnConfirm');
 
 //Eventos
 
+
 contenedorDefinitivo.addEventListener('submit', (event)=> {
 	event.preventDefault();
 	addDatos(event.target.elements.nombre)
-})
-
-contenedorDefinitivo.addEventListener('submit', (event)=> {
-	event.preventDefault();
 	addDatos(event.target.elements.apellido)
-})
-
-contenedorDefinitivo.addEventListener('submit', (event)=> {
-	event.preventDefault();
 	addDatos(event.target.elements.email)
-})
-
-contenedorDefinitivo.addEventListener('submit', (event)=> {
-	event.preventDefault();
 	addDatos(event.target.elements.newsletter)
-})
-
-contenedorDefinitivo.addEventListener('submit', (event)=> {
-	event.preventDefault();
 	addDatos(event.target.elements.zonas)
+	addDatos(event.target.elements.consulta)
 })
 
-contenedorDefinitivo.addEventListener('submit', (event)=> {
-	event.preventDefault();
-	addDatos(event.target.elements.consulta)	
-})
+// contenedorDefinitivo.addEventListener('submit', (event)=> {
+// 	event.preventDefault();
+// 	addDatos(event.target.elements.apellido)
+// })
+
+// contenedorDefinitivo.addEventListener('submit', (event)=> {
+// 	event.preventDefault();
+// 	addDatos(event.target.elements.email)
+// })
+
+// contenedorDefinitivo.addEventListener('submit', (event)=> {
+// 	event.preventDefault();
+// 	addDatos(event.target.elements.newsletter)
+// })
+
+// contenedorDefinitivo.addEventListener('submit', (event)=> {
+// 	event.preventDefault();
+// 	addDatos(event.target.elements.zonas)
+// })
+
+// contenedorDefinitivo.addEventListener('submit', (event)=> {
+// 	event.preventDefault();
+// 	addDatos(event.target.elements.consulta)	
+// })
 
 contenedorDefinitivo.addEventListener('submit', (event)=> {
 	document.getElementById('hide').style.display = 'block';
